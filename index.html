@@ -1,467 +1,748 @@
-<!DOCTYPE html>
-<html >
-<head>
-    <meta charset="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-</head>
-<body >
-
-<header class="site-header" style="border-bottom: 1px solid #E4E2DB; background: #fff; padding: 15px 0;">
-    <div style="max-width: 1180px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
-        <div class="site-branding" style="font-weight: 800; font-size: 20px;">
-            <a href="" style="color: #1C1B22; text-decoration: none;">Pixel<span style="color: #2451E0;">WebID</span></a>
-        </div>
-        <nav class="main-navigation">
-            <a href="#layanan" style="margin: 0 15px; color: #1C1B22; text-decoration: none; font-weight: 500;">Layanan</a>
-            <a href="#harga" style="margin: 0 15px; color: #1C1B22; text-decoration: none; font-weight: 500;">Harga</a>
-            <a href="#portofolio" style="margin: 0 15px; color: #1C1B22; text-decoration: none; font-weight: 500;">Portofolio</a>
-            <a href="https://wa.me/6285148367541" style="background: #2451E0; color: #fff; padding: 8px 18px; border-radius: 6px; text-decoration: none; font-weight: 600;">Konsultasi WA</a>
-        </nav>
-    </div>
-</header>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelWebID — Solusi Pertumbuhan Digital UMKM Indonesia</title>
+  <meta name="description" content="Sistem pertumbuhan digital untuk usaha kecil & UMKM Indonesia: Website profesional, automasi kerja, optimasi konversi, dan AI workflow terintegrasi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #08090a;
+      --bg-panel: #0f1011;
+      --bg-surface: #141517;
+      --bg-surface-elevated: #1a1b1e;
+      --text-main: #f7f8f8;
+      --text-muted: #8a8f98;
+      --text-subtle: #62666d;
+      --brand-indigo: #5e6ad2;
+      --brand-accent: #7170ff;
+      --brand-hover: #828fff;
+      --border-subtle: rgba(255, 255, 255, 0.06);
+      --border-standard: rgba(255, 255, 255, 0.09);
+      --border-highlight: rgba(255, 255, 255, 0.16);
+      --emerald: #10b981;
+      --amber: #f59e0b;
+    }
 
-
-<title>PixelWebID</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<style>
-  /* Design system verified via ui-ux-pro-max: product=B2B Service, style=Accessible & Ethical + Minimalism & Swiss,
-     colors=B2B Service palette, typography=Corporate Trust (Lexend/Source Sans 3), landing=Trust & Authority + Conversion */
-  :root{
-    --ink:#0F172A; --ink-soft:#334155; --muted:#475569;
-    --paper:#F8FAFC; --surface:#FFFFFF; --surface-2:#EEF2F7;
-    --border:#E2E8F0; --border-strong:#CBD5E1;
-    --accent:#0369A1; --on-accent:#FFFFFF; --accent-soft:#E0F0FA;
-    --highlight:#B45309; --highlight-soft:#FEF3E2;
-    --success:#0F7A4E; --success-soft:#E4F5EC;
-    --destructive:#DC2626;
-    --r:10px;
-  }
-  :root:not([data-theme="light"]){ @media (prefers-color-scheme: dark){
-    --ink:#F1F5F9; --ink-soft:#CBD5E1; --muted:#94A3B8;
-    --paper:#0B1220; --surface:#111A2C; --surface-2:#162238;
-    --border:#233047; --border-strong:#2E3E5C;
-    --accent:#5EB3E8; --on-accent:#0B1220; --accent-soft:#152A3D;
-    --highlight:#F2AC4E; --highlight-soft:#2E2210;
-    --success:#3FCE94; --success-soft:#0F2A22;
-  }}
-  :root[data-theme="dark"]{
-    --ink:#F1F5F9; --ink-soft:#CBD5E1; --muted:#94A3B8;
-    --paper:#0B1220; --surface:#111A2C; --surface-2:#162238;
-    --border:#233047; --border-strong:#2E3E5C;
-    --accent:#5EB3E8; --on-accent:#0B1220; --accent-soft:#152A3D;
-    --highlight:#F2AC4E; --highlight-soft:#2E2210;
-    --success:#3FCE94; --success-soft:#0F2A22;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--paper);color:var(--ink);
-    font-family:"Source Sans 3",system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
-  a{color:inherit;text-decoration:none}
-  a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-  h1,h2,h3{font-family:"Lexend",sans-serif;font-weight:700;letter-spacing:-.015em;margin:0;text-wrap:balance}
-  .mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
-  .wrap{max-width:1180px;margin:0 auto;padding-inline:24px}
-  p{margin:0}
-  svg.ic{display:block;flex:none}
-
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;
-    min-height:46px;padding:0 22px;border-radius:8px;border:1.5px solid transparent;cursor:pointer;
-    font-family:"Source Sans 3";transition:background-color .15s,color .15s,border-color .15s}
-  .btn-accent{background:var(--accent);color:var(--on-accent)}
-  .btn-accent:hover{filter:brightness(1.08)}
-  .btn-line{background:transparent;border-color:var(--border-strong);color:var(--ink)}
-  .btn-line:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-  .btn-line-l{background:transparent;border-color:rgba(255,255,255,.4);color:#fff}
-  .btn-line-l:hover{background:#fff;color:var(--ink)}
-  .btn-sm{min-height:40px;padding:0 16px;font-size:13.5px;border-radius:7px}
-
-  /* ---- NAV ---- */
-  header.top{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-  .brand{display:flex;align-items:center;gap:10px;font-family:"Lexend";font-weight:700;font-size:18px;letter-spacing:-.01em}
-  .brand .b2{color:var(--accent)}
-  .menu{display:flex;gap:28px;font-size:14.5px;font-weight:500;color:var(--ink-soft)}
-  .menu a:hover{color:var(--ink)}
-  .navr{display:flex;align-items:center;gap:16px}
-  .burger{display:none;background:none;border:0;color:var(--ink);cursor:pointer;min-width:44px;min-height:44px}
-
-  /* ---- HERO (Trust & Authority: mission/credibility first) ---- */
-  .hero{padding-block:48px 0}
-  .cred{display:inline-flex;align-items:center;gap:9px;background:var(--success-soft);color:var(--success);
-    border-radius:100px;padding:7px 14px;font-size:13px;font-weight:600;margin-bottom:26px}
-  .cred svg{width:15px;height:15px}
-  .hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:52px;align-items:start}
-  .hero h1{font-size:clamp(32px,4.2vw,50px);line-height:1.1}
-  .hero .sub{font-size:clamp(16px,1.3vw,18px);color:var(--ink-soft);max-width:52ch;margin-top:20px}
-  .hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-
-  .panel{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px 20px 6px}
-  .panel .ptitle{font-size:13px;color:var(--muted);margin-bottom:14px;display:flex;justify-content:space-between}
-  .panel .ptitle b{color:var(--ink);font-weight:600}
-  .sysrow{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--border)}
-  .sysrow:first-of-type{border-top:0}
-  .sysrow .ico{width:30px;height:30px;border-radius:8px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}
-  .sysrow .ico svg{width:15px;height:15px}
-  .sysrow .txt b{display:block;font-size:14.5px;font-weight:600}
-  .sysrow .txt span{font-size:12.5px;color:var(--muted)}
-  .sysrow .px{margin-left:auto;font-size:12px;color:var(--muted);text-align:right;white-space:nowrap}
-
-  /* ---- PROOF (logos + stats) ---- */
-  .proof{border-top:1px solid var(--border);margin-top:44px}
-  .proof-in{display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;padding-block:26px;flex-wrap:wrap}
-  .proof .lbl{font-size:13.5px;color:var(--muted)}
-  .proof .names{display:flex;flex-wrap:wrap;gap:0;margin-top:10px}
-  .proof .names span{font-family:"Lexend";font-weight:600;font-size:14.5px;color:var(--ink-soft);padding-inline:16px;border-left:1px solid var(--border)}
-  .proof .names span:first-child{border-left:0;padding-left:0}
-  .proof-stats{display:flex;gap:26px}
-  .proof-stats div{text-align:right}
-  .proof-stats b{display:block;font-family:"Lexend";font-weight:700;font-size:24px}
-  .proof-stats span{font-size:12px;color:var(--muted)}
-
-  /* ---- SECTION shell ---- */
-  section{padding-block:72px}
-  .shead{display:grid;gap:10px;margin-bottom:42px;max-width:62ch}
-  .shead .lbl2{font-size:13.5px;color:var(--accent);font-weight:600}
-  .shead h2{font-size:clamp(25px,3.2vw,36px)}
-  .shead p{color:var(--muted);font-size:16px}
-
-  /* ---- PILLARS (solution overview) ---- */
-  .pillars{border-top:1px solid var(--border-strong)}
-  .pillar{display:grid;grid-template-columns:56px 1fr auto;gap:22px;align-items:center;padding:28px 0;border-bottom:1px solid var(--border)}
-  .pillar .num{font-family:"Lexend";font-weight:800;font-size:26px;color:var(--border-strong)}
-  .pillar .body h3{font-size:clamp(18px,1.9vw,21px);font-weight:700;margin-bottom:6px}
-  .pillar .body p{color:var(--muted);font-size:14.5px;max-width:62ch}
-  .pillar .meta{text-align:right;flex:none}
-  .pillar .meta .from{font-size:11.5px;color:var(--muted);margin-bottom:3px}
-  .pillar .meta .amt{font-family:"IBM Plex Mono";font-weight:600;font-size:15px}
-  .pillar:hover{background:var(--surface-2)}
-  .pillar:hover .num{color:var(--accent)}
-
-  /* ---- TRUST BADGES ---- */
-  .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .tcard{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px}
-  .tcard .ico{width:38px;height:38px;border-radius:10px;background:var(--success-soft);color:var(--success);display:grid;place-items:center;margin-bottom:14px}
-  .tcard .ico svg{width:19px;height:19px}
-  .tcard b{display:block;font-size:15.5px;font-weight:700;margin-bottom:6px;font-family:"Lexend"}
-  .tcard span{color:var(--muted);font-size:13.5px;line-height:1.55}
-
-  /* ---- BUILD TABLE ---- */
-  .tbl{border:1px solid var(--border-strong);border-radius:14px;overflow:hidden}
-  .trow{display:grid;grid-template-columns:1.5fr 2.5fr auto auto;gap:20px;align-items:center;padding:19px 22px;border-bottom:1px solid var(--border);background:var(--surface)}
-  .trow:last-child{border-bottom:0}
-  .trow.head{background:var(--surface-2);font-size:12px;color:var(--muted);font-weight:600;padding-block:12px}
-  .trow.pop{background:var(--accent-soft)}
-  .tname{font-weight:700;font-size:15.5px;font-family:"Lexend"}
-  .tname small{display:block;font-weight:400;color:var(--muted);font-size:12.5px;margin-top:2px;font-family:"Source Sans 3"}
-  .tfeat{color:var(--ink-soft);font-size:13.5px;line-height:1.6}
-  .tdur{font-family:"IBM Plex Mono";font-size:13px;color:var(--muted);white-space:nowrap}
-  .tprice{font-family:"IBM Plex Mono";font-weight:600;font-size:16px;text-align:right;white-space:nowrap}
-  .tag{display:inline-block;font-size:11px;font-weight:700;color:var(--highlight);background:var(--highlight-soft);padding:3px 9px;border-radius:20px;margin-bottom:6px}
-  .pnote{color:var(--muted);font-size:13.5px;margin-top:20px}
-
-  /* ---- SYSTEM STRIPS ---- */
-  .sys-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border-strong);border-radius:14px;overflow:hidden}
-  .sys-col{background:var(--surface);padding:24px 22px;border-right:1px solid var(--border)}
-  .sys-col:last-child{border-right:0}
-  .sys-col h4{font-family:"Lexend";font-weight:700;font-size:16px;margin-bottom:4px}
-  .sys-col .sdesc{color:var(--muted);font-size:12.5px;margin-bottom:16px}
-  .tier{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-top:1px solid var(--border)}
-  .tier:first-of-type{border-top:0}
-  .tier .tn{font-size:13.5px;font-weight:500}
-  .tier .tp{font-family:"IBM Plex Mono";font-size:12px;color:var(--ink-soft);white-space:nowrap;text-align:right}
-
-  /* ---- PORTFOLIO (case studies) ---- */
-  .port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .pf{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface)}
-  .pf .bar{height:24px;background:var(--surface-2);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:5px;padding:0 10px}
-  .pf .bar i{width:6px;height:6px;border-radius:50%;background:var(--border-strong)}
-  .pf .face{aspect-ratio:16/10.5;background:linear-gradient(160deg,var(--accent-soft),var(--surface) 72%)}
-  .pf .cap{padding:13px 15px;display:flex;justify-content:space-between;align-items:center}
-  .pf .cap b{font-size:14px;font-weight:700;font-family:"Lexend"}
-  .pf .cap span{font-family:"IBM Plex Mono";font-size:10.5px;color:var(--muted)}
-
-  /* ---- QUOTE ---- */
-  .quote-box{border:1px solid var(--border);border-radius:14px;padding:clamp(26px,4vw,42px);background:var(--surface)}
-  .quote-box .flag2{font-size:12px;color:var(--highlight);background:var(--highlight-soft);padding:4px 10px;border-radius:20px;display:inline-block;margin-bottom:16px;font-weight:600}
-  .quote-box p{font-size:clamp(17px,1.9vw,21px);line-height:1.5;font-weight:500;letter-spacing:-.005em}
-  .quote-box .by{display:flex;align-items:center;gap:12px;margin-top:22px}
-  .quote-box .av{width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-weight:700;font-size:14px;font-family:"Lexend"}
-  .quote-box .by b{display:block;font-size:14px}
-  .quote-box .by span{font-size:12.5px;color:var(--muted)}
-
-  /* ---- JOURNAL ---- */
-  .jrow{display:grid;grid-template-columns:110px 1fr auto;gap:22px;align-items:center;padding:19px 0;border-top:1px solid var(--border)}
-  .jrow:first-child{border-top:1px solid var(--border-strong)}
-  .jrow .jc{font-size:12px;color:var(--accent);font-weight:600}
-  .jrow h3{font-family:"Source Sans 3";font-weight:600;font-size:16px}
-  .jrow .jgo{font-size:13px;color:var(--muted)}
-  .jrow:hover h3{color:var(--accent)}
-
-  /* ---- CTA ---- */
-  .cta-final{background:var(--ink);color:var(--paper);border-radius:16px;padding:clamp(34px,5vw,58px);display:grid;grid-template-columns:1.3fr auto;gap:28px;align-items:center}
-  .cta-final h2{color:#fff;font-size:clamp(23px,3vw,33px)}
-  .cta-final p{color:#AEB9CC;font-size:15px;margin-top:10px;max-width:48ch}
-  .cta-final .cwrap{display:flex;gap:12px;flex-wrap:wrap}
-
-  /* ---- FOOTER ---- */
-  footer.site{border-top:1px solid var(--border);padding-block:50px 28px}
-  .fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:34px}
-  footer h4{font-family:"Lexend";font-size:13px;margin:0 0 14px;color:var(--ink)}
-  footer a{display:block;color:var(--muted);font-size:14px;padding:4px 0}
-  footer a:hover{color:var(--ink)}
-  .fdesc{max-width:34ch;font-size:13.5px;color:var(--muted);line-height:1.6}
-  .fbottom{border-top:1px solid var(--border);margin-top:34px;padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
-
-  @media(max-width:980px){
-    .hero-grid{grid-template-columns:1fr}
-    .sys-grid{grid-template-columns:1fr}
-    .sys-col{border-right:0;border-bottom:1px solid var(--border)}
-    .sys-col:last-child{border-bottom:0}
-    .trust-grid{grid-template-columns:1fr}
-    .port-grid{grid-template-columns:repeat(2,1fr)}
-    .fgrid{grid-template-columns:1fr 1fr}
-    .cta-final{grid-template-columns:1fr}
-    .proof-in{grid-template-columns:1fr}
-    .proof-stats{justify-content:space-between}
-    .proof-stats div{text-align:left}
-  }
-  @media(max-width:680px){
-    .menu,.navr .btn{display:none}
-    .burger{display:block}
-    .trow{grid-template-columns:1fr;gap:6px;text-align:left}
-    .trow.head{display:none}
-    .tprice{text-align:left}
-    .pillar{grid-template-columns:36px 1fr;row-gap:10px}
-    .pillar .meta{grid-column:2;text-align:left}
-    .port-grid{grid-template-columns:1fr}
-    .jrow{grid-template-columns:1fr;gap:6px}
-    .proof .names span{border-left:0;padding-inline:0;margin-right:16px}
-    .fgrid{grid-template-columns:1fr}
-    .proof-stats{flex-wrap:wrap;gap:16px}
-  }
-</style>
-
-<!-- reusable inline SVG icons (no emoji, per accessibility checklist) -->
-<svg width="0" height="0" style="position:absolute">
-  <symbol id="ic-check" viewBox="0 0 20 20"><path d="M4 10.5 8 14.5 16 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-shield" viewBox="0 0 20 20"><path d="M10 2 3 5v5c0 4 3 6.5 7 8 4-1.5 7-4 7-8V5l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-lock" viewBox="0 0 20 20"><rect x="4" y="9" width="12" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 9V6.5a3.5 3.5 0 0 1 7 0V9" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
-  <symbol id="ic-doc" viewBox="0 0 20 20"><path d="M5 2.5h7l3 3v12h-10Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 2.5V6h3M7 10.5h6M7 13.5h6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
-  <symbol id="ic-globe" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7.3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M2.9 10h14.2M10 2.7c2.3 2.1 2.3 12.5 0 14.6M10 2.7c-2.3 2.1-2.3 12.5 0 14.6" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
-  <symbol id="ic-refresh" viewBox="0 0 20 20"><path d="M3.5 10a6.5 6.5 0 0 1 11-4.6M16.5 10a6.5 6.5 0 0 1-11 4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M14 3.5v3h-3M6 16.5v-3h3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-cpu" viewBox="0 0 20 20"><rect x="5" y="5" width="10" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 2.5v2.5M12 2.5v2.5M8 15v2.5M12 15v2.5M2.5 8h2.5M2.5 12h2.5M15 8h2.5M15 12h2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
-  <symbol id="ic-chart" viewBox="0 0 20 20"><path d="M3 17V3M3 17h14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="6" y="10" width="2.4" height="5" fill="currentColor"/><rect x="10" y="7" width="2.4" height="8" fill="currentColor"/><rect x="14" y="4" width="2.4" height="11" fill="currentColor"/></symbol>
-  <symbol id="ic-arrow" viewBox="0 0 20 20"><path d="M4 10h12M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-</svg>
-
-<!-- ===== NAV ===== -->
-<header class="top"><div class="wrap nav">
-  <a class="brand" href="#">
-    <svg width="27" height="27" viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="24" fill="var(--accent)"/><rect x="26" y="70" width="18" height="24" rx="4" fill="#fff"/><rect x="51" y="52" width="18" height="42" rx="4" fill="#fff"/><rect x="76" y="34" width="18" height="60" rx="4" fill="#fff" opacity=".85"/><rect x="76" y="14" width="18" height="14" rx="4" fill="#fff" opacity=".85"/></svg>
-    <span>Pixel<span class="b2">Web</span>ID</span>
-  </a>
-  <nav class="menu">
-    <a href="#pillars">Layanan</a><a href="#build">Harga</a><a href="#work">Kerja kami</a><a href="#journal">Journal</a><a href="#">Tentang</a>
-  </nav>
-  <div class="navr">
-    <a class="btn btn-accent btn-sm" href="https://wa.me/6285148367541">Konsultasi gratis</a>
-    <button class="burger" aria-label="Buka menu"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h16M3 11h16M3 16h16"/></svg></button>
-  </div>
-</div></header>
-
-<!-- ===== HERO — mission/credibility first (Trust & Authority pattern) ===== -->
-<section class="hero"><div class="wrap">
-  <span class="cred"><svg class="ic"><use href="#ic-shield"/></svg> Katalog resmi & harga tetap — diperbarui 15 September 2026</span>
-
-  <div class="hero-grid">
-    <div>
-      <h1>Satu tim yang membangun, merawat, dan menjalankan pertumbuhan bisnismu.</h1>
-      <p class="sub">PixelWebID mengelola website, perawatan rutin, otomasi AI, dan iklan dalam satu sistem — satu laporan, tanpa biaya tersembunyi, dan tanpa janji palsu soal viral atau ranking 1 Google.</p>
-      <div class="cta">
-        <a class="btn btn-accent" href="https://wa.me/6285148367541">Konsultasi gratis</a>
-        <a class="btn btn-line" href="#pillars">Lihat katalog lengkap</a>
-      </div>
-    </div>
-
-    <div class="panel">
-      <div class="ptitle"><b>Empat sistem, satu partner</b><span class="mono">2026</span></div>
-      <div class="sysrow"><span class="ico"><svg class="ic"><use href="#ic-doc"/></svg></span><div class="txt"><b>Build</b><span>Website & sistem digital</span></div><span class="px mono">mulai 500rb</span></div>
-      <div class="sysrow"><span class="ico"><svg class="ic"><use href="#ic-refresh"/></svg></span><div class="txt"><b>Care</b><span>Perawatan & managed service</span></div><span class="px mono">mulai 500rb/bln</span></div>
-      <div class="sysrow"><span class="ico"><svg class="ic"><use href="#ic-cpu"/></svg></span><div class="txt"><b>Automate</b><span>Otomasi AI & karyawan digital</span></div><span class="px mono">setup 4,5jt</span></div>
-      <div class="sysrow"><span class="ico"><svg class="ic"><use href="#ic-chart"/></svg></span><div class="txt"><b>Grow</b><span>Pertumbuhan & pemasaran</span></div><span class="px mono">mulai 2,5jt/bln</span></div>
-    </div>
-  </div>
-
-  <!-- PROOF: logos + stats (Trust & Authority: Proof step) -->
-  <div class="proof"><div class="wrap proof-in" style="padding-inline:0">
-    <div>
-      <span class="lbl">Sudah dipercaya oleh</span>
-      <div class="names"><span>Fancycourse</span><span>Memorie Travel</span><span>Akhlas Farm</span><span>Technindo Jaya</span><span>Lotus Car Audio</span><span>LokerBro</span></div>
-    </div>
-    <div class="proof-stats">
-      <div><b>5+</b><span>Tahun pengalaman</span></div>
-      <div><b>40+</b><span>Bisnis terbantu</span></div>
-      <div><b>4</b><span>Sistem terintegrasi</span></div>
-    </div>
-  </div></div>
-</div></section>
-
-<!-- ===== PILLARS (solution overview) ===== -->
-<section id="pillars"><div class="wrap">
-  <div class="shead">
-    <span class="lbl2">Layanan</span>
-    <h2>Empat sistem yang bisa berdiri sendiri, atau berjalan bersama</h2>
-    <p>Mulai dari mana saja yang bisnismu butuhkan sekarang. Banyak klien mulai dari Build, lalu menambah Care begitu website mulai jalan.</p>
-  </div>
-  <div class="pillars">
-    <a class="pillar" href="#build"><span class="num mono">01</span><div class="body"><h3>Build — Website & sistem digital</h3><p>Website cepat, responsif HP, dan berorientasi konversi. Dari kartu nama online 1 halaman sampai toko WooCommerce lengkap.</p></div><div class="meta"><div class="from">Sekali bayar</div><div class="amt">mulai Rp 500rb</div></div></a>
-    <a class="pillar" href="#systems"><span class="num mono">02</span><div class="body"><h3>Care — Perawatan & managed service</h3><p>Website selalu aktif 24/7, aman dari malware, dan diperbarui rutin — tanpa kamu harus mikirin sisi teknisnya.</p></div><div class="meta"><div class="from">Per bulan</div><div class="amt">mulai Rp 500rb</div></div></a>
-    <a class="pillar" href="#systems"><span class="num mono">03</span><div class="body"><h3>Automate — Otomasi AI & karyawan digital</h3><p>Agen AI membalas chat pelanggan, mengelola alur kerja kantor, dan mengerjakan tugas administratif — nonstop 24 jam.</p></div><div class="meta"><div class="from">Setup + bulanan</div><div class="amt">mulai Rp 4,5jt</div></div></a>
-    <a class="pillar" href="#systems"><span class="num mono">04</span><div class="body"><h3>Grow — Pertumbuhan & pemasaran</h3><p>Iklan, konten, dan SEO dikelola supaya prospek terus mengalir — bukan ramai sesaat lalu sepi lagi.</p></div><div class="meta"><div class="from">Per bulan</div><div class="amt">mulai Rp 2,5jt</div></div></a>
-  </div>
-</div></section>
-
-<!-- ===== TRUST BADGES ===== -->
-<section style="padding-top:0"><div class="wrap">
-  <div class="trust-grid">
-    <div class="tcard"><span class="ico"><svg class="ic"><use href="#ic-check"/></svg></span><b>Tanpa klaim palsu</b><span>Kami tidak janji viral instan atau pasti ranking 1 Google — fokus kami aset digital yang tangguh dengan laporan berbasis data riil.</span></div>
-    <div class="tcard"><span class="ico"><svg class="ic"><use href="#ic-lock"/></svg></span><b>Kepemilikan penuh di tanganmu</b><span>Domain, konten, dan data bisnis atas nama kamu sendiri — bukan atas nama kami.</span></div>
-    <div class="tcard"><span class="ico"><svg class="ic"><use href="#ic-globe"/></svg></span><b>Tanpa biaya tersembunyi</b><span>Setiap kebutuhan di luar paket mengikuti daftar resmi biaya add-on — kamu tahu angkanya sebelum kerja dimulai.</span></div>
-  </div>
-</div></section>
-
-<!-- ===== BUILD TABLE (transparent pricing) ===== -->
-<section id="build"><div class="wrap">
-  <div class="shead">
-    <span class="lbl2">Build — harga resmi</span>
-    <h2>Enam paket, satu harga jujur</h2>
-    <p>Semua sudah termasuk domain & hosting tahun pertama, SSL gratis, dan desain mobile-first. Tidak ada biaya siluman — kebutuhan di luar paket ikut daftar add-on resmi.</p>
-  </div>
-  <div class="tbl">
-    <div class="trow head"><span>Paket</span><span>Fitur utama</span><span>Durasi</span><span style="text-align:right">Tarif</span></div>
-    <div class="trow"><div class="tname">Kenalan Cepat<small>Starter Web</small></div><div class="tfeat">1 halaman responsif, domain .my.id + hosting, tombol WA mengambang</div><div class="tdur">3 hari</div><div class="tprice">Rp 500.000</div></div>
-    <div class="trow"><div class="tname">Promo Jitu<small>Landing Page</small></div><div class="tfeat">1 halaman konversi, GA4 + Meta Pixel, copywriting persuasif</div><div class="tdur">5 hari</div><div class="tprice">Rp 750.000</div></div>
-    <div class="trow pop"><div class="tname"><span class="tag">Paling laris</span>Bisnis Profesional<small>Company Profile</small></div><div class="tfeat">s/d 5 halaman, email bisnis @domain, Google Maps, SEO on-page dasar</div><div class="tdur">7–10 hari</div><div class="tprice">Rp 1.500.000</div></div>
-    <div class="trow"><div class="tname">Etalase Online<small>Katalog Produk</small></div><div class="tfeat">Katalog s/d 30 produk, tombol pesan WA per produk, filter kategori</div><div class="tdur">10–14 hari</div><div class="tprice">Rp 2.700.000</div></div>
-    <div class="trow"><div class="tname">Toko Online Lengkap<small>E-Commerce WP</small></div><div class="tfeat">WooCommerce s/d 150 produk, payment gateway QRIS/VA, manajemen stok</div><div class="tdur">14–21 hari</div><div class="tprice">Rp 7.500.000</div></div>
-    <div class="trow"><div class="tname">Sistem / Web App<small>Solusi Custom</small></div><div class="tfeat">UI/UX custom, backend & frontend mandiri, dashboard & integrasi API</div><div class="tdur">sesuai scope</div><div class="tprice">mulai Rp 10jt</div></div>
-  </div>
-  <p class="pnote">Harga = pembuatan awal (termasuk domain & hosting tahun pertama). Perpanjangan tahun ke-2 terpisah. Add-on resmi: halaman tambahan Rp 350rb, artikel SEO Rp 350rb/artikel, revisi luar kuota Rp 150rb.</p>
-</div></section>
-
-<!-- ===== CARE / AUTOMATE / GROW ===== -->
-<section id="systems"><div class="wrap">
-  <div class="shead">
-    <span class="lbl2">Care, Automate & Grow</span>
-    <h2>Sistem berjalan setelah website jadi</h2>
-    <p>Website yang bagus tapi dibiarkan sendirian jarang tumbuh. Tiga sistem ini yang menjaga & mendorongnya.</p>
-  </div>
-  <div class="sys-grid">
-    <div class="sys-col">
-      <h4>Care</h4>
-      <p class="sdesc">Domain, hosting, backup mingguan, update keamanan, monitoring uptime 24/7.</p>
-      <div class="tier"><span class="tn">Care Basic</span><span class="tp">Rp 500rb/bln</span></div>
-      <div class="tier"><span class="tn">Tumbuh</span><span class="tp">Rp 2jt/bln</span></div>
-      <div class="tier"><span class="tn">Growth+</span><span class="tp">Rp 3,5jt/bln</span></div>
-      <div class="tier"><span class="tn">Scale</span><span class="tp">Rp 6jt/bln</span></div>
-    </div>
-    <div class="sys-col">
-      <h4>Automate</h4>
-      <p class="sdesc">Agen AI CS, otomasi alur kerja kantor, sampai "karyawan AI" untuk tugas repetitif.</p>
-      <div class="tier"><span class="tn">AI Receptionist</span><span class="tp">4,5jt + 950rb/bln</span></div>
-      <div class="tier"><span class="tn">AI Receptionist Pro</span><span class="tp">8,5jt + 1,75jt/bln</span></div>
-      <div class="tier"><span class="tn">AI Workflow Otomasi</span><span class="tp">7,5–25jt+/alur</span></div>
-      <div class="tier"><span class="tn">AI Staff (Digital Employee)</span><span class="tp">5jt + 4,5–9jt/bln</span></div>
-    </div>
-    <div class="sys-col">
-      <h4>Grow</h4>
-      <p class="sdesc">Iklan berbayar, konten sosial rutin, SEO & optimasi mesin pencari AI.</p>
-      <div class="tier"><span class="tn">Pengelolaan Iklan</span><span class="tp">Rp 2,5jt/bln</span></div>
-      <div class="tier"><span class="tn">Konten Sosial (Starter–Pro)</span><span class="tp">2,5–8jt/bln</span></div>
-      <div class="tier"><span class="tn">SEO & AI Search (AEO)</span><span class="tp">3–12jt/bln</span></div>
-      <div class="tier"><span class="tn">Full Growth Retainer</span><span class="tp">Rp 12jt/bln</span></div>
-    </div>
-  </div>
-</div></section>
-
-<!-- ===== PORTFOLIO (case studies) ===== -->
-<section id="work"><div class="wrap">
-  <div class="shead">
-    <span class="lbl2">Kerja kami</span>
-    <h2>Sebagian bisnis yang sudah kami bantu online</h2>
-  </div>
-  <div class="port-grid">
-    <div class="pf"><div class="bar"><i></i><i></i><i></i></div><div class="face"></div><div class="cap"><b>Akhlas Farm</b><span>akhlasafarm.com</span></div></div>
-    <div class="pf"><div class="bar"><i></i><i></i><i></i></div><div class="face"></div><div class="cap"><b>Fancycourse</b><span>fancycourse.com</span></div></div>
-    <div class="pf"><div class="bar"><i></i><i></i><i></i></div><div class="face"></div><div class="cap"><b>Memorie Travel</b><span>memorietravel.my.id</span></div></div>
-    <div class="pf"><div class="bar"><i></i><i></i><i></i></div><div class="face"></div><div class="cap"><b>Technindo Jaya</b><span>technindojayamandiri.com</span></div></div>
-    <div class="pf"><div class="bar"><i></i><i></i><i></i></div><div class="face"></div><div class="cap"><b>Lotus Car Audio</b><span>lotuscaraudio.my.id</span></div></div>
-    <div class="pf"><div class="bar"><i></i><i></i><i></i></div><div class="face"></div><div class="cap"><b>LokerBro</b><span>lokerbro.id</span></div></div>
-  </div>
-</div></section>
-
-<!-- ===== TESTIMONIAL ===== -->
-<section><div class="wrap">
-  <div class="quote-box">
-    <span class="flag2">Contoh — ganti dengan testimoni asli klien</span>
-    <p>"Prosesnya cepat dan dibantu sampai jadi. Sekarang pelanggan gampang nemu toko saya di Google, dan saya nggak perlu pusing mikirin hosting atau keamanan — itu bagian Care yang jalan sendiri."</p>
-    <div class="by"><span class="av">B</span><div><b>Budi Santoso</b><span>Pemilik, Toko Bapak</span></div></div>
-  </div>
-</div></section>
-
-<!-- ===== JOURNAL ===== -->
-<section id="journal"><div class="wrap">
-  <div class="shead">
-    <span class="lbl2">Journal</span>
-    <h2>Tulisan seputar website & pertumbuhan digital</h2>
-  </div>
-  <div class="jlist">
-    <a class="jrow" href="#"><span class="jc">Tutorial</span><h3>Cara Membuat Website Jualan Sendiri Tanpa Koding dalam 7 Langkah</h3><span class="jgo">Baca</span></a>
-    <a class="jrow" href="#"><span class="jc">Desain</span><h3>Memilih & Modifikasi Tema WordPress Tanpa Pusing</h3><span class="jgo">Baca</span></a>
-    <a class="jrow" href="#"><span class="jc">Plugin</span><h3>Daftar Plugin Wajib Punya untuk Berbagai Kebutuhan Website</h3><span class="jgo">Baca</span></a>
-    <a class="jrow" href="#"><span class="jc">Keamanan</span><h3>Benteng Pertahanan WordPress: Melindungi Aset Digital dari Hacker</h3><span class="jgo">Baca</span></a>
-  </div>
-</div></section>
-
-<!-- ===== CTA ===== -->
-<section><div class="wrap">
-  <div class="cta-final">
-    <div>
-      <h2>Mau mulai dari sistem yang mana?</h2>
-      <p>Ceritakan kondisi bisnismu sekarang — kami rekomendasikan mulai dari Build, Care, Automate, atau Grow. Konsultasi gratis, tanpa paksaan.</p>
-    </div>
-    <div class="cwrap">
-      <a class="btn btn-accent" href="https://wa.me/6285148367541">Chat WhatsApp</a>
-      <a class="btn btn-line-l" href="#pillars">Lihat semua paket</a>
-    </div>
-  </div>
-</div></section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="site"><div class="wrap">
-  <div class="fgrid">
-    <div>
-      <div class="brand" style="margin-bottom:14px">Pixel<span class="b2">Web</span>ID</div>
-      <p class="fdesc">Digital Growth, Web & AI Automation Agency untuk bisnis Indonesia. Build, Care, Automate, Grow — satu tim, satu laporan.</p>
-    </div>
-    <div><h4>Menu</h4><a href="#pillars">Layanan</a><a href="#build">Harga</a><a href="#work">Kerja kami</a><a href="#journal">Journal</a></div>
-    <div><h4>Sistem</h4><a href="#build">Build</a><a href="#systems">Care</a><a href="#systems">Automate</a><a href="#systems">Grow</a></div>
-    <div><h4>Kontak</h4><a href="https://wa.me/6285148367541">WA 0851-4836-7541</a><a href="mailto:cs@pixelweb.my.id">cs@pixelweb.my.id</a><a href="mailto:pixelwebid88@gmail.com">pixelwebid88@gmail.com</a></div>
-  </div>
-  <div class="fbottom"><span>© 2026 PixelWebID</span><span class="mono">pixelweb.my.id & pixelwebid.com</span></div>
-</div></footer>
-
-
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<footer class="site-footer" style="border-top: 1px solid #E4E2DB; background: #FAFAF7; padding: 40px 0; margin-top: 60px;">
-    <div style="max-width: 1180px; margin: 0 auto; padding: 0 20px; text-align: center; color: #555; font-size: 14px;">
-        <p style="font-weight: 700; color: #1C1B22;">PixelWebID &mdash; Digital Growth, Web &amp; AI Automation Agency</p>
-        <p>WhatsApp: 0851-4836-7541 | Email: cs@pixelweb.my.id / pixelwebid88@gmail.com</p>
-        <p>&copy;  PixelWebID. Hak cipta dilindungi.</p>
-    </div>
-</footer>
-
-</body>
-</html>
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-feature-settings: "cv01", "ss03";
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(8, 9, 10, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: -0.3px;
+    }
+
+    .brand-icon {
+      width: 24px;
+      height: 24px;
+      background: linear-gradient(135deg, var(--brand-indigo), #38bdf8);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand-icon svg {
+      width: 14px;
+      height: 14px;
+      fill: white;
+    }
+
+    nav.nav-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    nav.nav-links a {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      transition: color 0.15s;
+    }
+
+    nav.nav-links a:hover {
+      color: var(--text-main);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 13.5px;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: all 0.15s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--brand-indigo);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .btn-primary:hover {
+      background: var(--brand-accent);
+      box-shadow: 0 0 16px rgba(113, 112, 255, 0.35);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-main);
+      border: 1px solid var(--border-standard);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: var(--border-highlight);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 96px 0 64px;
+      text-align: center;
+      position: relative;
+    }
+
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-standard);
+      border-radius: 9999px;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .pill-badge .dot {
+      width: 6px;
+      height: 6px;
+      background: var(--emerald);
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 600;
+      letter-spacing: -1.4px;
+      line-height: 1.15;
+      max-width: 820px;
+      margin: 0 auto 20px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(180deg, #ffffff 40%, rgba(255, 255, 255, 0.6) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 36px;
+      line-height: 1.6;
+    }
+
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 56px;
+    }
+
+    /* Honest Stats Strip */
+    .stats-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border-subtle);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      overflow: hidden;
+      max-width: 760px;
+      margin: 0 auto 80px;
+    }
+
+    .stat-box {
+      background: var(--bg-panel);
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 26px;
+      font-weight: 500;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+
+    /* Section Headers */
+    .section-header {
+      margin-bottom: 40px;
+    }
+
+    .section-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--brand-accent);
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.7px;
+      margin-bottom: 10px;
+    }
+
+    .section-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 580px;
+    }
+
+    /* Pillars Grid */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 96px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 28px;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      background: rgba(255, 255, 255, 0.035);
+      border-color: var(--border-standard);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      margin-bottom: 20px;
+    }
+
+    .card-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-subtle);
+      margin-bottom: 12px;
+    }
+
+    .card-title {
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .card-list {
+      list-style: none;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .card-list li {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-list li::before {
+      content: "—";
+      color: var(--brand-accent);
+    }
+
+    /* Pricing Section */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 96px;
+    }
+
+    .price-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .price-card.featured {
+      background: rgba(94, 106, 210, 0.05);
+      border-color: rgba(113, 112, 255, 0.35);
+    }
+
+    .price-card.featured::after {
+      content: "PALING DIMINATI";
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      background: var(--brand-indigo);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .price-name {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .price-tagline {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      min-height: 38px;
+    }
+
+    .price-val {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.6px;
+      margin-bottom: 20px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .price-features {
+      list-style: none;
+      margin-bottom: 28px;
+    }
+
+    .price-features li {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .price-features li svg {
+      width: 14px;
+      height: 14px;
+      fill: var(--emerald);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* Portfolio Section */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 96px;
+    }
+
+    .port-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 20px;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .port-card:hover {
+      border-color: var(--border-highlight);
+    }
+
+    .port-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text-subtle);
+      margin-bottom: 10px;
+    }
+
+    .port-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .port-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .port-link {
+      font-size: 12.5px;
+      color: var(--brand-accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 48px 0 32px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    .footer-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 32px; }
+      .pillars-grid, .pricing-grid, .portfolio-grid { grid-template-columns: 1fr; }
+      nav.nav-links { display: none; }
+      .stats-strip { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Nav -->
+  <header>
+    <div class="container nav-wrap">
+      <a href="#" class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zm-9 9h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg>
+        </div>
+        PixelWebID
+      </a>
+      <nav class="nav-links">
+        <a href="#layanan">Layanan</a>
+        <a href="#harga">Harga</a>
+        <a href="#portofolio">Portofolio</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-primary">Konsultasi WA</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="pill-badge">
+        <span class="dot"></span>
+        Sistem Pertumbuhan Digital UMKM Indonesia
+      </div>
+      <h1><span>Website Profesional &amp; Automasi Bisnis Tanpa Ribet</span></h1>
+      <p>Bantu bisnis Anda makin dikenal, proses operasional lebih cepat, dan omzet terukur lewat sistem terpadu: website cepat, konten terarah, dan integrasi automasi.</p>
+      
+      <div class="hero-cta">
+        <a href="#harga" class="btn btn-primary">Pilih Paket</a>
+        <a href="#layanan" class="btn btn-ghost">Lihat 4 Pilar Layanan</a>
+      </div>
+
+      <!-- Verified Honest Stats -->
+      <div class="stats-strip">
+        <div class="stat-box">
+          <div class="stat-number">3+</div>
+          <div class="stat-label">Portofolio Aktif Terverifikasi</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">4 Pilar</div>
+          <div class="stat-label">Build, Care, Automate, Grow</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Transparansi Harga &amp; SLA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 Pillars -->
+  <section id="layanan" style="padding: 32px 0 64px;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Struktur Ekosistem</div>
+        <div class="section-title">4 Pilar Solusi Digital PixelWebID</div>
+        <div class="section-desc">Bukan sekadar bikin website lalu ditinggal. Kami sediakan ekosistem komprehensif untuk mendampingi bisnis Anda terus tumbuh.</div>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="card">
+          <div class="card-top">
+            <div class="card-num">01 / BUILD</div>
+            <div class="card-title">Website &amp; Aplikasi Kilat</div>
+            <div class="card-desc">Landing page konversi tinggi, web profil bisnis, hingga web app interaktif yang cepat, mobile-friendly, dan ramah SEO.</div>
+          </div>
+          <ul class="card-list">
+            <li>Landing Page Kenalan Cepat &amp; Promo Jitu</li>
+            <li>Web Profil Perusahaan &amp; Katalog Produk</li>
+            <li>Custom Web Application</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-num">02 / CARE</div>
+            <div class="card-title">Pemeliharaan &amp; Proteksi</div>
+            <div class="card-desc">Jaga performa website tetap prima: update keamanan rutin, backup berkala, monitoring uptime 24/7, dan perbaikan instan.</div>
+          </div>
+          <ul class="card-list">
+            <li>Backup data otomatis &amp; restore aman</li>
+            <li>Security patch &amp; malware prevention</li>
+            <li>Garansi uptime &amp; dukungan teknis prioritas</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-num">03 / AUTOMATE</div>
+            <div class="card-title">AI Workflow &amp; Otomasi Operasional</div>
+            <div class="card-desc">Pangkas pekerjaan repetitif. Hubungkan WhatsApp, form pesanan, CRM, dan sistem AI untuk efisiensi bisnis maksimal.</div>
+          </div>
+          <ul class="card-list">
+            <li>Integrasi WhatsApp Bot &amp; AI Receptionist</li>
+            <li>Otomasi data transaksi ke spreadsheet/database</li>
+            <li>Karyawan AI untuk tugas spesifik</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-num">04 / GROW</div>
+            <div class="card-title">Traffic &amp; Pertumbuhan Akun</div>
+            <div class="card-desc">Tingkatkan visibilitas dan datangkan pelanggan potensial lewat optimasi mesin pencari dan manajemen kampanye digital.</div>
+          </div>
+          <ul class="card-list">
+            <li>Optimasi SEO Organik &amp; Local Business</li>
+            <li>Setup tracking konversi &amp; analitik</li>
+            <li>Manajemen iklan Meta &amp; Google Ads</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="harga" style="padding: 32px 0 64px;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Transparansi Biaya</div>
+        <div class="section-title">Paket Layanan Tanpa Biaya Tersembunyi</div>
+        <div class="section-desc">Pilih paket yang paling sesuai dengan fase bisnis Anda saat ini. Semua paket menyertakan domain dan setup awal.</div>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div>
+            <div class="price-name">Kenalan Cepat</div>
+            <div class="price-tagline">Solusi praktis untuk tes pasar &amp; presensi online instan.</div>
+            <div class="price-val">Rp 500.000</div>
+            <ul class="price-features">
+              <li>
+                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                1 Halaman Landing Page Responsif
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Domain .my.id Termasuk
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Tombol Direct WhatsApp
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20PixelWebID,%20saya%20tertarik%20paket%20Kenalan%20Cepat" class="btn btn-ghost" style="width: 100%;">Pilih Paket</a>
+        </div>
+
+        <div class="price-card featured">
+          <div>
+            <div class="price-name">Promo Jitu Landing Page</div>
+            <div class="price-tagline">Struktur copywriting terarah khusus untuk kampanye iklan.</div>
+            <div class="price-val">Rp 750.000</div>
+            <ul class="price-features">
+              <li>
+                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Landing Page Konversi Tinggi
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Setup Pixel / Conversion Tracking
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Copywriting Persuasif &amp; Fast Load
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20PixelWebID,%20saya%20tertarik%20paket%20Promo%20Jitu" class="btn btn-primary" style="width: 100%;">Pilih Paket</a>
+        </div>
+
+        <div class="price-card">
+          <div>
+            <div class="price-name">Bisnis Profesional</div>
+            <div class="price-tagline">Profil perusahaan lengkap untuk bangun reputasi terpercaya.</div>
+            <div class="price-val">Rp 1.500.000</div>
+            <ul class="price-features">
+              <li>
+                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Hingga 5 Halaman Konten
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Setup Email Domain Perusahaan
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Basic SEO &amp; Google Indexing
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20PixelWebID,%20saya%20tertarik%20paket%20Bisnis%20Profesional" class="btn btn-ghost" style="width: 100%;">Pilih Paket</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verified Portfolio -->
+  <section id="portofolio" style="padding: 32px 0 80px;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Bukti Karya</div>
+        <div class="section-title">Klien &amp; Portofolio Terverifikasi</div>
+        <div class="section-desc">Karya nyata yang aktif dan dapat diakses langsung secara publik.</div>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="port-card">
+          <div>
+            <div class="port-badge">HEALTHCARE</div>
+            <div class="port-title">Yuha Home Care</div>
+            <div class="port-desc">Layanan perawat medis ke rumah 24 jam dengan integrasi reservasi kilat via WhatsApp.</div>
+          </div>
+          <a href="https://yuhahomecare.my.id" target="_blank" class="port-link">Kunjungi Situs &rarr;</a>
+        </div>
+
+        <div class="port-card">
+          <div>
+            <div class="port-badge">AUTOMOTIVE</div>
+            <div class="port-title">Lotus Car Audio</div>
+            <div class="port-desc">Pusat instalasi dan modifikasi audio mobil profesional di Jakarta.</div>
+          </div>
+          <a href="https://lotuscaraudio.my.id" target="_blank" class="port-link">Kunjungi Situs &rarr;</a>
+        </div>
+
+        <div class="port-card">
+          <div>
+            <div class="port-badge">IT INFRASTRUCTURE</div>
+            <div class="port-title">Mitra Network Solution</div>
+            <div class="port-desc">Penyedia infrastruktur jaringan, server, dan solusi kabel fiber optic enterprise.</div>
+          </div>
+          <a href="https://mitranetworksolution.com" target="_blank" class="port-link">Kunjungi Situs &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-wrap">
+      <div>&copy; 2026 PixelWebID. Brand Agensi Pertumbuhan Digital UMKM Indonesia.</div>
+      <div>Ditenagai oleh Tim Karyawan AI Terpadu</div>
+    </div>
+  </footer>
+
+</body>
+</html>
