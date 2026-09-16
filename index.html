@@ -2,29 +2,92 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PixelWebID — Solusi Pertumbuhan Digital UMKM Indonesia</title>
-  <meta name="description" content="Sistem pertumbuhan digital untuk usaha kecil & UMKM Indonesia: Website profesional, automasi kerja, optimasi konversi, dan AI workflow terintegrasi.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Jasa Pembuatan Website UMKM &amp; Landing Page Cepat — PixelWebID</title>
+  <meta name="description" content="Jasa pembuatan website UMKM, landing page iklan konversi tinggi, dan automasi WhatsApp bisnis. Pengerjaan cepat, paket Rp 500rb &amp; Rp 750rb siap pakai termasuk domain &amp; SEO.">
+  <meta name="keywords" content="jasa pembuatan website umkm, jasa bikin landing page cepat, jasa website jakarta, website murah umkm, jasa landing page iklan, pixelwebid">
+  <meta name="author" content="PixelWebID">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#18181b">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jasa Pembuatan Website UMKM &amp; Landing Page Cepat — PixelWebID">
+  <meta property="og:description" content="Bikin website bisnis profesional gak pakai ribet. Paket Rp 500rb &amp; Rp 750rb langsung terima beres termasuk domain, copywriting persuasif, dan optimasi SEO Google.">
+  <meta property="og:url" content="https://pixelweb.my.id/">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Schema.org Rich Snippet for SEO Page 1 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://pixelweb.my.id/#business",
+        "name": "PixelWebID",
+        "url": "https://pixelweb.my.id/",
+        "description": "Jasa pembuatan website profesional, landing page konversi tinggi, dan automasi digital untuk UMKM Indonesia.",
+        "priceRange": "IDR 500.000 - IDR 750.000",
+        "currenciesAccepted": "IDR",
+        "paymentAccepted": "Bank Transfer, QRIS",
+        "areaServed": "Indonesia",
+        "openingHours": "Mo-Su 08:00-21:00"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://pixelweb.my.id/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Berapa lama proses pengerjaan website di PixelWebID?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Untuk paket Kenalan Cepat (Rp 500.000) dan Bisnis Pro (Rp 750.000), estimasi pengerjaan rata-rata selesai dalam 1-3 hari kerja setelah materi dan brief bisnis diterima."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apa perbedaan paket Rp 500rb dan Rp 750rb?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Keduanya mendapatkan fasilitas lengkap: single-page landing page responsif, copywriting persuasif, dan basic SEO Google. Perbedaannya: paket Rp 500.000 mendapatkan domain .my.id, sedangkan paket Rp 750.000 mendapatkan domain global .com."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah website sudah bisa langsung diakses di HP dan Google?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya, semua website sudah dioptimasi 100% responsif di smartphone (fast-loading) serta didaftarkan ke Google Search Console (Basic SEO) agar mudah ditemukan calon pembeli."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <style>
     :root {
-      --bg-base: #08090a;
-      --bg-panel: #0f1011;
-      --bg-surface: #141517;
-      --bg-surface-elevated: #1a1b1e;
-      --text-main: #f7f8f8;
-      --text-muted: #8a8f98;
-      --text-subtle: #62666d;
-      --brand-indigo: #5e6ad2;
-      --brand-accent: #7170ff;
-      --brand-hover: #828fff;
-      --border-subtle: rgba(255, 255, 255, 0.06);
-      --border-standard: rgba(255, 255, 255, 0.09);
-      --border-highlight: rgba(255, 255, 255, 0.16);
-      --emerald: #10b981;
-      --amber: #f59e0b;
+      --bg: #FAFAF9;
+      --surface: #FFFFFF;
+      --surface-subtle: #F4F4F5;
+      --text-main: #18181B;
+      --text-muted: #52525B;
+      --text-light: #71717A;
+      --brand: #0F172A;
+      --accent: #2563EB;
+      --accent-soft: #EFF6FF;
+      --accent-hover: #1D4ED8;
+      --border: #E4E4E7;
+      --border-focus: #CBD5E1;
+      --emerald: #059669;
+      --emerald-bg: #ECFDF5;
     }
 
     * {
@@ -34,13 +97,17 @@
     }
 
     body {
-      background-color: var(--bg-base);
+      background-color: var(--bg);
       color: var(--text-main);
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-feature-settings: "cv01", "ss03";
-      line-height: 1.5;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--brand);
+      letter-spacing: -0.02em;
     }
 
     a {
@@ -49,72 +116,65 @@
     }
 
     .container {
-      max-width: 1120px;
+      max-width: 1080px;
       margin: 0 auto;
       padding: 0 24px;
     }
 
-    /* Top Nav */
+    /* Navbar */
     header {
       position: sticky;
       top: 0;
-      z-index: 50;
-      background: rgba(8, 9, 10, 0.85);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-subtle);
+      z-index: 100;
+      background: rgba(250, 250, 249, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
     }
 
     .nav-wrap {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 64px;
+      height: 70px;
     }
 
-    .brand {
+    .brand-logo {
       display: flex;
       align-items: center;
       gap: 10px;
-      font-weight: 600;
-      font-size: 16px;
-      letter-spacing: -0.3px;
+      font-weight: 800;
+      font-size: 19px;
+      color: var(--brand);
     }
 
-    .brand-icon {
-      width: 24px;
-      height: 24px;
-      background: linear-gradient(135deg, var(--brand-indigo), #38bdf8);
-      border-radius: 6px;
+    .brand-badge {
+      width: 28px;
+      height: 28px;
+      background: var(--brand);
+      color: white;
+      border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
     }
 
-    .brand-icon svg {
-      width: 14px;
-      height: 14px;
-      fill: white;
-    }
-
-    nav.nav-links {
-      display: flex;
-      gap: 28px;
-    }
-
-    nav.nav-links a {
-      font-size: 13.5px;
-      color: var(--text-muted);
-      transition: color 0.15s;
-    }
-
-    nav.nav-links a:hover {
-      color: var(--text-main);
-    }
-
-    .nav-actions {
+    .nav-menu {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 32px;
+    }
+
+    .nav-menu a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: color 0.15s ease;
+    }
+
+    .nav-menu a:hover {
+      color: var(--brand);
     }
 
     .btn {
@@ -122,625 +182,656 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      font-size: 13.5px;
-      font-weight: 500;
-      padding: 8px 16px;
-      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 8px;
       transition: all 0.15s ease;
       cursor: pointer;
     }
 
     .btn-primary {
-      background: var(--brand-indigo);
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: var(--brand);
+      color: white;
+      border: 1px solid transparent;
     }
 
     .btn-primary:hover {
-      background: var(--brand-accent);
-      box-shadow: 0 0 16px rgba(113, 112, 255, 0.35);
+      background: #27272A;
+      transform: translateY(-1px);
     }
 
-    .btn-ghost {
-      background: rgba(255, 255, 255, 0.03);
+    .btn-accent {
+      background: var(--accent);
+      color: white;
+      border: 1px solid transparent;
+    }
+
+    .btn-accent:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: var(--surface);
       color: var(--text-main);
-      border: 1px solid var(--border-standard);
+      border: 1px solid var(--border);
     }
 
-    .btn-ghost:hover {
-      background: rgba(255, 255, 255, 0.07);
-      border-color: var(--border-highlight);
+    .btn-outline:hover {
+      background: var(--surface-subtle);
+      border-color: var(--border-focus);
     }
 
-    /* Hero */
+    /* Hero Section */
     .hero {
-      padding: 96px 0 64px;
+      padding: 80px 0 60px;
       text-align: center;
-      position: relative;
     }
 
-    .pill-badge {
+    .pill-tag {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 4px 12px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border-standard);
+      padding: 6px 14px;
+      background: var(--emerald-bg);
+      border: 1px solid #A7F3D0;
       border-radius: 9999px;
-      font-size: 12px;
-      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--emerald);
       margin-bottom: 24px;
     }
 
-    .pill-badge .dot {
-      width: 6px;
-      height: 6px;
+    .pill-tag .dot {
+      width: 7px;
+      height: 7px;
       background: var(--emerald);
       border-radius: 50%;
     }
 
     .hero h1 {
-      font-size: 48px;
-      font-weight: 600;
-      letter-spacing: -1.4px;
+      font-size: 50px;
       line-height: 1.15;
-      max-width: 820px;
+      font-weight: 800;
+      max-width: 860px;
       margin: 0 auto 20px;
-    }
-
-    .hero h1 span {
-      background: linear-gradient(180deg, #ffffff 40%, rgba(255, 255, 255, 0.6) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.03em;
     }
 
     .hero p {
-      font-size: 17px;
+      font-size: 18px;
       color: var(--text-muted);
-      max-width: 620px;
+      max-width: 640px;
       margin: 0 auto 36px;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
-    .hero-cta {
+    .hero-buttons {
       display: flex;
       justify-content: center;
       gap: 14px;
-      margin-bottom: 56px;
+      margin-bottom: 50px;
     }
 
-    /* Honest Stats Strip */
-    .stats-strip {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: var(--border-subtle);
-      border: 1px solid var(--border-subtle);
+    /* Trust Proof Bar */
+    .proof-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 20px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
       border-radius: 12px;
-      overflow: hidden;
-      max-width: 760px;
-      margin: 0 auto 80px;
+      max-width: 800px;
+      margin: 0 auto 70px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
     }
 
-    .stat-box {
-      background: var(--bg-panel);
-      padding: 24px 20px;
-      text-align: center;
+    .proof-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: left;
     }
 
-    .stat-number {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 26px;
-      font-weight: 500;
-      color: var(--text-main);
-      margin-bottom: 4px;
+    .proof-num {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--brand);
+      font-family: 'Plus Jakarta Sans', sans-serif;
     }
 
-    .stat-label {
+    .proof-text {
       font-size: 12.5px;
       color: var(--text-muted);
+      line-height: 1.3;
     }
 
     /* Section Headers */
-    .section-header {
-      margin-bottom: 40px;
+    .section-head {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 48px;
     }
 
-    .section-tag {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11.5px;
+    .section-head .tag {
+      font-size: 12px;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
-      color: var(--brand-accent);
+      letter-spacing: 0.08em;
+      color: var(--accent);
       margin-bottom: 8px;
     }
 
-    .section-title {
-      font-size: 28px;
-      font-weight: 600;
-      letter-spacing: -0.7px;
-      margin-bottom: 10px;
-    }
-
-    .section-desc {
-      font-size: 15px;
-      color: var(--text-muted);
-      max-width: 580px;
-    }
-
-    /* Pillars Grid */
-    .pillars-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-bottom: 96px;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid var(--border-subtle);
-      border-radius: 10px;
-      padding: 28px;
-      transition: all 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .card:hover {
-      background: rgba(255, 255, 255, 0.035);
-      border-color: var(--border-standard);
-      transform: translateY(-2px);
-    }
-
-    .card-top {
-      margin-bottom: 20px;
-    }
-
-    .card-num {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
-      color: var(--text-subtle);
+    .section-head h2 {
+      font-size: 32px;
+      font-weight: 700;
       margin-bottom: 12px;
     }
 
-    .card-title {
-      font-size: 19px;
-      font-weight: 600;
-      letter-spacing: -0.3px;
-      margin-bottom: 8px;
-    }
-
-    .card-desc {
-      font-size: 14px;
+    .section-head p {
+      font-size: 15px;
       color: var(--text-muted);
-      line-height: 1.55;
     }
 
-    .card-list {
-      list-style: none;
-      margin-top: 16px;
-      padding-top: 16px;
-      border-top: 1px solid var(--border-subtle);
-    }
-
-    .card-list li {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .card-list li::before {
-      content: "—";
-      color: var(--brand-accent);
-    }
-
-    /* Pricing Section */
-    .pricing-grid {
+    /* Pricing Cards */
+    .pricing-wrap {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-bottom: 96px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 820px;
+      margin: 0 auto 90px;
     }
 
-    .price-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid var(--border-subtle);
-      border-radius: 10px;
-      padding: 28px;
+    .pricing-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 32px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       position: relative;
-    }
-
-    .price-card.featured {
-      background: rgba(94, 106, 210, 0.05);
-      border-color: rgba(113, 112, 255, 0.35);
-    }
-
-    .price-card.featured::after {
-      content: "PALING DIMINATI";
-      position: absolute;
-      top: -10px;
-      right: 20px;
-      background: var(--brand-indigo);
-      color: #fff;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      padding: 2px 8px;
-      border-radius: 4px;
-    }
-
-    .price-name {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
-
-    .price-tagline {
-      font-size: 12.5px;
-      color: var(--text-muted);
-      margin-bottom: 20px;
-      min-height: 38px;
-    }
-
-    .price-val {
-      font-size: 28px;
-      font-weight: 600;
-      letter-spacing: -0.6px;
-      margin-bottom: 20px;
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    .price-features {
-      list-style: none;
-      margin-bottom: 28px;
-    }
-
-    .price-features li {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin-bottom: 10px;
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-    }
-
-    .price-features li svg {
-      width: 14px;
-      height: 14px;
-      fill: var(--emerald);
-      flex-shrink: 0;
-      margin-top: 3px;
-    }
-
-    /* Portfolio Section */
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-bottom: 96px;
-    }
-
-    .port-card {
-      background: var(--bg-panel);
-      border: 1px solid var(--border-subtle);
-      border-radius: 10px;
-      padding: 20px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
       transition: all 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
-    .port-card:hover {
-      border-color: var(--border-highlight);
+    .pricing-card:hover {
+      border-color: var(--border-focus);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
     }
 
-    .port-badge {
-      display: inline-block;
+    .pricing-card.popular {
+      border: 2px solid var(--accent);
+      background: #FFFFFF;
+    }
+
+    .badge-popular {
+      position: absolute;
+      top: -12px;
+      right: 28px;
+      background: var(--accent);
+      color: white;
       font-size: 11px;
-      font-family: 'JetBrains Mono', monospace;
-      color: var(--text-subtle);
-      margin-bottom: 10px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
-    .port-title {
-      font-size: 16px;
-      font-weight: 600;
+    .price-title {
+      font-size: 20px;
+      font-weight: 700;
       margin-bottom: 6px;
     }
 
-    .port-desc {
-      font-size: 13px;
+    .price-desc {
+      font-size: 13.5px;
       color: var(--text-muted);
+      margin-bottom: 24px;
+      min-height: 40px;
+    }
+
+    .price-nominal {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--brand);
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .price-period {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-light);
+    }
+
+    .feature-list {
+      list-style: none;
+      margin-bottom: 32px;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+
+    .feature-list li {
+      font-size: 14px;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .feature-list li.domain-highlight {
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .check-icon {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--emerald-bg);
+      color: var(--emerald);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 90px;
+    }
+
+    .benefit-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .benefit-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
       margin-bottom: 16px;
     }
 
-    .port-link {
-      font-size: 12.5px;
-      color: var(--brand-accent);
+    .benefit-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .benefit-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* Portfolio Verified */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 90px;
+    }
+
+    .portfolio-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+    }
+
+    .portfolio-card:hover {
+      border-color: var(--border-focus);
+      transform: translateY(-2px);
+    }
+
+    .port-category {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .port-name {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .port-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .port-btn {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--brand);
       display: inline-flex;
       align-items: center;
-      gap: 4px;
+      gap: 6px;
+    }
+
+    .port-btn:hover {
+      color: var(--accent);
+    }
+
+    /* FAQ */
+    .faq-grid {
+      max-width: 760px;
+      margin: 0 auto 90px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+
+    .faq-q {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--brand);
+    }
+
+    .faq-a {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* CTA Bottom */
+    .bottom-cta {
+      background: var(--brand);
+      color: white;
+      border-radius: 16px;
+      padding: 56px 32px;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .bottom-cta h2 {
+      color: white;
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .bottom-cta p {
+      color: #A1A1AA;
+      font-size: 16px;
+      max-width: 520px;
+      margin: 0 auto 28px;
     }
 
     /* Footer */
     footer {
-      border-top: 1px solid var(--border-subtle);
-      padding: 48px 0 32px;
-      color: var(--text-muted);
-      font-size: 13px;
-    }
-
-    .footer-wrap {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
+      border-top: 1px solid var(--border);
+      padding: 36px 0;
+      font-size: 13.5px;
+      color: var(--text-light);
+      text-align: center;
     }
 
     @media (max-width: 768px) {
-      .hero h1 { font-size: 32px; }
-      .pillars-grid, .pricing-grid, .portfolio-grid { grid-template-columns: 1fr; }
-      nav.nav-links { display: none; }
-      .stats-strip { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 34px; }
+      .pricing-wrap, .benefits-grid, .portfolio-grid { grid-template-columns: 1fr; }
+      .nav-menu { display: none; }
+      .proof-bar { flex-direction: column; gap: 16px; text-align: center; }
+      .proof-item { flex-direction: column; text-align: center; gap: 4px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Nav -->
+  <!-- Header -->
   <header>
     <div class="container nav-wrap">
-      <a href="#" class="brand">
-        <div class="brand-icon">
-          <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zm-9 9h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg>
-        </div>
+      <a href="#" class="brand-logo">
+        <div class="brand-badge">P</div>
         PixelWebID
       </a>
-      <nav class="nav-links">
-        <a href="#layanan">Layanan</a>
-        <a href="#harga">Harga</a>
+      <nav class="nav-menu">
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#harga">Paket Harga</a>
         <a href="#portofolio">Portofolio</a>
+        <a href="#faq">Tanya Jawab</a>
       </nav>
-      <div class="nav-actions">
-        <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-primary">Konsultasi WA</a>
-      </div>
+      <a href="https://wa.me/6281234567890?text=Halo%20PixelWebID,%20saya%20mau%20konsultasi%20bikin%20website" target="_blank" class="btn btn-primary">Konsultasi WA</a>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <div class="pill-badge">
+      <div class="pill-tag">
         <span class="dot"></span>
-        Sistem Pertumbuhan Digital UMKM Indonesia
+        Jasa Pembuatan Website &amp; Landing Page UMKM
       </div>
-      <h1><span>Website Profesional &amp; Automasi Bisnis Tanpa Ribet</span></h1>
-      <p>Bantu bisnis Anda makin dikenal, proses operasional lebih cepat, dan omzet terukur lewat sistem terpadu: website cepat, konten terarah, dan integrasi automasi.</p>
+      <h1>Bikin Website Profesional Gak Pakai Ribet, Siap Terima Pembeli Baru</h1>
+      <p>Tingkatkan kredibilitas bisnis Anda dengan website berkecepatan tinggi, copywriting persuasif yang menjual, dan optimasi langsung masuk Google Search.</p>
       
-      <div class="hero-cta">
-        <a href="#harga" class="btn btn-primary">Pilih Paket</a>
-        <a href="#layanan" class="btn btn-ghost">Lihat 4 Pilar Layanan</a>
+      <div class="hero-buttons">
+        <a href="#harga" class="btn btn-accent" style="padding: 12px 28px; font-size: 15px;">Lihat Paket Harga (Mulai Rp 500rb)</a>
+        <a href="#portofolio" class="btn btn-outline" style="padding: 12px 24px; font-size: 15px;">Lihat Bukti Portofolio</a>
       </div>
 
-      <!-- Verified Honest Stats -->
-      <div class="stats-strip">
-        <div class="stat-box">
-          <div class="stat-number">3+</div>
-          <div class="stat-label">Portofolio Aktif Terverifikasi</div>
+      <!-- Trust Bar -->
+      <div class="proof-bar">
+        <div class="proof-item">
+          <div class="proof-num">1-3 Hari</div>
+          <div class="proof-text">Pengerjaan Kilat &amp;<br>Langsung Online</div>
         </div>
-        <div class="stat-box">
-          <div class="stat-number">4 Pilar</div>
-          <div class="stat-label">Build, Care, Automate, Grow</div>
+        <div class="proof-item">
+          <div class="proof-num">100%</div>
+          <div class="proof-text">Optimasi Responsif<br>Layar Smartphone</div>
         </div>
-        <div class="stat-box">
-          <div class="stat-number">100%</div>
-          <div class="stat-label">Transparansi Harga &amp; SLA</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4 Pillars -->
-  <section id="layanan" style="padding: 32px 0 64px;">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Struktur Ekosistem</div>
-        <div class="section-title">4 Pilar Solusi Digital PixelWebID</div>
-        <div class="section-desc">Bukan sekadar bikin website lalu ditinggal. Kami sediakan ekosistem komprehensif untuk mendampingi bisnis Anda terus tumbuh.</div>
-      </div>
-
-      <div class="pillars-grid">
-        <div class="card">
-          <div class="card-top">
-            <div class="card-num">01 / BUILD</div>
-            <div class="card-title">Website &amp; Aplikasi Kilat</div>
-            <div class="card-desc">Landing page konversi tinggi, web profil bisnis, hingga web app interaktif yang cepat, mobile-friendly, dan ramah SEO.</div>
-          </div>
-          <ul class="card-list">
-            <li>Landing Page Kenalan Cepat &amp; Promo Jitu</li>
-            <li>Web Profil Perusahaan &amp; Katalog Produk</li>
-            <li>Custom Web Application</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-top">
-            <div class="card-num">02 / CARE</div>
-            <div class="card-title">Pemeliharaan &amp; Proteksi</div>
-            <div class="card-desc">Jaga performa website tetap prima: update keamanan rutin, backup berkala, monitoring uptime 24/7, dan perbaikan instan.</div>
-          </div>
-          <ul class="card-list">
-            <li>Backup data otomatis &amp; restore aman</li>
-            <li>Security patch &amp; malware prevention</li>
-            <li>Garansi uptime &amp; dukungan teknis prioritas</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-top">
-            <div class="card-num">03 / AUTOMATE</div>
-            <div class="card-title">AI Workflow &amp; Otomasi Operasional</div>
-            <div class="card-desc">Pangkas pekerjaan repetitif. Hubungkan WhatsApp, form pesanan, CRM, dan sistem AI untuk efisiensi bisnis maksimal.</div>
-          </div>
-          <ul class="card-list">
-            <li>Integrasi WhatsApp Bot &amp; AI Receptionist</li>
-            <li>Otomasi data transaksi ke spreadsheet/database</li>
-            <li>Karyawan AI untuk tugas spesifik</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-top">
-            <div class="card-num">04 / GROW</div>
-            <div class="card-title">Traffic &amp; Pertumbuhan Akun</div>
-            <div class="card-desc">Tingkatkan visibilitas dan datangkan pelanggan potensial lewat optimasi mesin pencari dan manajemen kampanye digital.</div>
-          </div>
-          <ul class="card-list">
-            <li>Optimasi SEO Organik &amp; Local Business</li>
-            <li>Setup tracking konversi &amp; analitik</li>
-            <li>Manajemen iklan Meta &amp; Google Ads</li>
-          </ul>
+        <div class="proof-item">
+          <div class="proof-num">All-in</div>
+          <div class="proof-text">Sudah Termasuk<br>Domain &amp; Basic SEO</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section id="harga" style="padding: 32px 0 64px;">
+  <!-- Benefits Section -->
+  <section id="keunggulan" style="padding: 20px 0 60px;">
     <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Transparansi Biaya</div>
-        <div class="section-title">Paket Layanan Tanpa Biaya Tersembunyi</div>
-        <div class="section-desc">Pilih paket yang paling sesuai dengan fase bisnis Anda saat ini. Semua paket menyertakan domain dan setup awal.</div>
+      <div class="section-head">
+        <div class="tag">Solusi Bisnis</div>
+        <h2>Mengapa Website PixelWebID Lebih Menghasilkan?</h2>
+        <p>Bukan cuma sekadar punya web, tapi sistem yang dirancang agar pengunjung mudah menghubungi dan membeli produk Anda.</p>
       </div>
 
-      <div class="pricing-grid">
-        <div class="price-card">
-          <div>
-            <div class="price-name">Kenalan Cepat</div>
-            <div class="price-tagline">Solusi praktis untuk tes pasar &amp; presensi online instan.</div>
-            <div class="price-val">Rp 500.000</div>
-            <ul class="price-features">
-              <li>
-                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
-                1 Halaman Landing Page Responsif
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
-                Domain .my.id Termasuk
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
-                Tombol Direct WhatsApp
-              </li>
-            </ul>
-          </div>
-          <a href="https://wa.me/6281234567890?text=Halo%20PixelWebID,%20saya%20tertarik%20paket%20Kenalan%20Cepat" class="btn btn-ghost" style="width: 100%;">Pilih Paket</a>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <div class="benefit-title">Super Cepat &amp; Responsif</div>
+          <div class="benefit-desc">Halaman dibuka dalam hitungan detik di HP calon pembeli tanpa loading berat. Menurunkan bounce rate secara drastis.</div>
         </div>
-
-        <div class="price-card featured">
-          <div>
-            <div class="price-name">Promo Jitu Landing Page</div>
-            <div class="price-tagline">Struktur copywriting terarah khusus untuk kampanye iklan.</div>
-            <div class="price-val">Rp 750.000</div>
-            <ul class="price-features">
-              <li>
-                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
-                Landing Page Konversi Tinggi
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
-                Setup Pixel / Conversion Tracking
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
-                Copywriting Persuasif &amp; Fast Load
-              </li>
-            </ul>
-          </div>
-          <a href="https://wa.me/6281234567890?text=Halo%20PixelWebID,%20saya%20tertarik%20paket%20Promo%20Jitu" class="btn btn-primary" style="width: 100%;">Pilih Paket</a>
+        <div class="benefit-card">
+          <div class="benefit-icon">✍️</div>
+          <div class="benefit-title">Copywriting Persuasif</div>
+          <div class="benefit-desc">Susunan kata dan struktur penawaran yang terbukti memandu pengunjung untuk langsung klik tombol WhatsApp.</div>
         </div>
-
-        <div class="price-card">
-          <div>
-            <div class="price-name">Bisnis Profesional</div>
-            <div class="price-tagline">Profil perusahaan lengkap untuk bangun reputasi terpercaya.</div>
-            <div class="price-val">Rp 1.500.000</div>
-            <ul class="price-features">
-              <li>
-                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
-                Hingga 5 Halaman Konten
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
-                Setup Email Domain Perusahaan
-              </li>
-              <li>
-                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
-                Basic SEO &amp; Google Indexing
-              </li>
-            </ul>
-          </div>
-          <a href="https://wa.me/6281234567890?text=Halo%20PixelWebID,%20saya%20tertarik%20paket%20Bisnis%20Profesional" class="btn btn-ghost" style="width: 100%;">Pilih Paket</a>
+        <div class="benefit-card">
+          <div class="benefit-icon">🔍</div>
+          <div class="benefit-title">Basic SEO &amp; Google Ready</div>
+          <div class="benefit-desc">Struktur heading, meta tag, dan Schema Rich Snippet rapi agar bisnis Anda mudah diindeks dan ditemukan di pencarian Google.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Verified Portfolio -->
-  <section id="portofolio" style="padding: 32px 0 80px;">
+  <!-- Pricing Section -->
+  <section id="harga" style="padding: 20px 0 70px;">
     <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Bukti Karya</div>
-        <div class="section-title">Klien &amp; Portofolio Terverifikasi</div>
-        <div class="section-desc">Karya nyata yang aktif dan dapat diakses langsung secara publik.</div>
+      <div class="section-head">
+        <div class="tag">Paket Transparan</div>
+        <h2>Pilihan Paket Siap Pakai</h2>
+        <p>Tanpa biaya tersembunyi. Sekali bayar untuk website siap pakai lengkap dengan domain resmi dan optimasi.</p>
+      </div>
+
+      <div class="pricing-wrap">
+        <!-- Paket 500rb -->
+        <div class="pricing-card">
+          <div>
+            <div class="price-title">Kenalan Cepat</div>
+            <div class="price-desc">Pilihan hemat untuk UMKM yang ingin mulai punya presensi digital terpercaya.</div>
+            <div class="price-nominal">Rp 500.000 <span class="price-period">/ paket</span></div>
+
+            <ul class="feature-list">
+              <li><span class="check-icon">✓</span> 1 Halaman Landing Page Responsif</li>
+              <li class="domain-highlight"><span class="check-icon">✓</span> Gratis Domain .my.id (1 Tahun)</li>
+              <li><span class="check-icon">✓</span> Copywriting Penawaran Persuasif</li>
+              <li><span class="check-icon">✓</span> Basic SEO Google &amp; Rich Snippet</li>
+              <li><span class="check-icon">✓</span> Integrasi Tombol Pesan WhatsApp</li>
+              <li><span class="check-icon">✓</span> Pengerjaan Cepat 1-3 Hari</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20PixelWebID,%20saya%20mau%20ambil%20paket%20Kenalan%20Cepat%20Rp500rb" target="_blank" class="btn btn-outline" style="width: 100%;">Pesan Paket Rp 500rb</a>
+        </div>
+
+        <!-- Paket 750rb -->
+        <div class="pricing-card popular">
+          <div class="badge-popular">Paling Diminati</div>
+          <div>
+            <div class="price-title">Bisnis Profesional</div>
+            <div class="price-desc">Solusi optimal untuk kampanye iklan &amp; branding lebih bonafide dengan domain .com.</div>
+            <div class="price-nominal">Rp 750.000 <span class="price-period">/ paket</span></div>
+
+            <ul class="feature-list">
+              <li><span class="check-icon">✓</span> 1 Halaman Landing Page Responsif</li>
+              <li class="domain-highlight"><span class="check-icon">✓</span> Gratis Domain Global .com (1 Tahun)</li>
+              <li><span class="check-icon">✓</span> Copywriting Penawaran Persuasif</li>
+              <li><span class="check-icon">✓</span> Basic SEO Google &amp; Rich Snippet</li>
+              <li><span class="check-icon">✓</span> Integrasi Tombol Pesan WhatsApp</li>
+              <li><span class="check-icon">✓</span> Pengerjaan Prioritas 1-2 Hari</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20PixelWebID,%20saya%20mau%20ambil%20paket%20Bisnis%20Profesional%20Rp750rb" target="_blank" class="btn btn-accent" style="width: 100%;">Pesan Paket Rp 750rb (.com)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portofolio" style="padding: 20px 0 70px;">
+    <div class="container">
+      <div class="section-head">
+        <div class="tag">Karya Terverifikasi</div>
+        <h2>Portofolio Klien Nyata</h2>
+        <p>Bukan template kosong. Lihat contoh website nyata yang aktif melayani pelanggan.</p>
       </div>
 
       <div class="portfolio-grid">
-        <div class="port-card">
+        <div class="portfolio-card">
           <div>
-            <div class="port-badge">HEALTHCARE</div>
-            <div class="port-title">Yuha Home Care</div>
-            <div class="port-desc">Layanan perawat medis ke rumah 24 jam dengan integrasi reservasi kilat via WhatsApp.</div>
+            <div class="port-category">Layanan Medis</div>
+            <div class="port-name">Yuha Home Care</div>
+            <div class="port-desc">Website jasa perawat medis ke rumah 24 jam dengan integrasi reservasi kilat via WhatsApp.</div>
           </div>
-          <a href="https://yuhahomecare.my.id" target="_blank" class="port-link">Kunjungi Situs &rarr;</a>
+          <a href="https://yuhahomecare.my.id" target="_blank" class="port-btn">Buka Website &rarr;</a>
         </div>
 
-        <div class="port-card">
+        <div class="portfolio-card">
           <div>
-            <div class="port-badge">AUTOMOTIVE</div>
-            <div class="port-title">Lotus Car Audio</div>
-            <div class="port-desc">Pusat instalasi dan modifikasi audio mobil profesional di Jakarta.</div>
+            <div class="port-category">Otomotif</div>
+            <div class="port-name">Lotus Car Audio</div>
+            <div class="port-desc">Pusat instalasi audio dan modifikasi mobil profesional di Jakarta.</div>
           </div>
-          <a href="https://lotuscaraudio.my.id" target="_blank" class="port-link">Kunjungi Situs &rarr;</a>
+          <a href="https://lotuscaraudio.my.id" target="_blank" class="port-btn">Buka Website &rarr;</a>
         </div>
 
-        <div class="port-card">
+        <div class="portfolio-card">
           <div>
-            <div class="port-badge">IT INFRASTRUCTURE</div>
-            <div class="port-title">Mitra Network Solution</div>
-            <div class="port-desc">Penyedia infrastruktur jaringan, server, dan solusi kabel fiber optic enterprise.</div>
+            <div class="port-category">IT Infrastructure</div>
+            <div class="port-name">Mitra Network Solution</div>
+            <div class="port-desc">Penyedia solusi jaringan fiber optic, instalasi server, dan sistem keamanan kantor.</div>
           </div>
-          <a href="https://mitranetworksolution.com" target="_blank" class="port-link">Kunjungi Situs &rarr;</a>
+          <a href="https://mitranetworksolution.com" target="_blank" class="port-btn">Buka Website &rarr;</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" style="padding: 20px 0 70px;">
+    <div class="container">
+      <div class="section-head">
+        <div class="tag">Bantuan &amp; Panduan</div>
+        <h2>Pertanyaan yang Sering Diajukan</h2>
+        <p>Informasi jelas seputar alur pemesanan dan layanan kami.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q">Apakah saya perlu menyiapkan teks dan foto sendiri?</div>
+          <div class="faq-a">Cukup infokan nama bisnis, layanan/produk, dan kontak WhatsApp Anda. Tim kami akan bantu susun teks penawaran (copywriting) yang rapi dan menarik.</div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-q">Bagaimana cara perpanjangan tahun berikutnya?</div>
+          <div class="faq-a">Biaya tahun kedua hanya perpanjangan sewa domain &amp; hosting standar tanpa biaya pembuatan ulang.</div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-q">Apakah website bisa dipakai untuk pasang iklan Meta Ads / Google Ads?</div>
+          <div class="faq-a">Sangat bisa. Struktur halaman kami dirancang fast-loading dan konversi tinggi, cocok dipasangi pixel tracking dan diiklankan.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="container">
+    <div class="bottom-cta">
+      <h2>Siap Punya Website Profesional Hari Ini?</h2>
+      <p>Konsultasikan kebutuhan usaha Anda secara gratis. Tim PixelWebID siap bantu siapkan website terbaik untuk bisnis Anda.</p>
+      <a href="https://wa.me/6281234567890?text=Halo%20PixelWebID,%20saya%20mau%20tanya%20pembuatan%20website" target="_blank" class="btn btn-accent" style="padding: 14px 32px; font-size: 15px;">Hubungi Kami via WhatsApp</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container footer-wrap">
-      <div>&copy; 2026 PixelWebID. Brand Agensi Pertumbuhan Digital UMKM Indonesia.</div>
-      <div>Ditenagai oleh Tim Karyawan AI Terpadu</div>
+    <div class="container">
+      <p>&copy; 2026 PixelWebID — Solusi Website &amp; Pertumbuhan Digital UMKM Indonesia.</p>
     </div>
   </footer>
 
