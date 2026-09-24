@@ -13,15 +13,18 @@
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
+  html,body{max-width:100%;overflow-x:hidden}
   body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
   img,svg{max-width:100%;display:block}
   a{text-decoration:none;color:inherit}
+  h1,h2,h3,p,.lead,.chip{overflow-wrap:break-word}
   .wrap{width:min(1120px,92vw);margin:0 auto}
+  .lbl-short{display:none}
   .demo{background:var(--amber);color:#3b2500;font-size:13px;text-align:center;padding:7px 14px;font-weight:600}
   header.top{position:sticky;top:0;z-index:40;background:rgba(11,28,51,.96);backdrop-filter:blur(6px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
-  header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
-  .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
-  .brand .badge{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--amber),var(--amber2));display:grid;place-items:center;color:#3b2500;font-size:18px}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px;white-space:nowrap}
+  .brand .badge{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--amber),var(--amber2));display:grid;place-items:center;color:#3b2500;font-size:18px;flex:0 0 auto}
   nav.link{display:flex;gap:22px;font-size:14px;color:#cbd7e6}
   nav.link a:hover{color:#fff}
   .btn{display:inline-flex;align-items:center;gap:9px;border-radius:12px;padding:12px 18px;font-weight:700;font-size:15px;border:1px solid transparent;cursor:pointer}
@@ -31,6 +34,19 @@
   .btn-dark{background:var(--navy);color:#fff}
   .head-cta{display:flex;gap:10px;align-items:center}
   @media(max-width:900px){nav.link,.head-cta .btn-ghost{display:none}}
+  @media(max-width:640px){
+    .lbl{display:none}
+    .lbl-short{display:inline}
+    .brand{font-size:15px}
+    .brand .badge{width:30px;height:30px;font-size:16px}
+    header.top .wrap{padding:10px 0;flex-wrap:nowrap}
+    .head-cta .btn{padding:9px 12px;font-size:13.5px}
+    .demo{font-size:12px;padding:6px 10px}
+    .hero{padding:38px 0 52px}
+    .btn{padding:11px 15px;font-size:14.5px}
+    section{padding:46px 0}
+    .cta-band{padding:26px 18px}
+  }
 
   .hero{background:
       radial-gradient(1100px 420px at 85% -10%, rgba(255,183,3,.22), transparent 60%),
@@ -120,7 +136,7 @@
     </nav>
     <div class="head-cta">
       <a class="btn btn-ghost" href="#armada">Lihat Armada</a>
-      <a class="btn btn-wa" data-wa href="#">💬 Booking via WhatsApp</a>
+      <a class="btn btn-wa" data-wa href="#"><span class="lbl">💬 Booking via WhatsApp</span><span class="lbl-short">💬 Booking</span></a>
     </div>
   </div>
 </header>
